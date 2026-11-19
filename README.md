@@ -1,56 +1,102 @@
-# Welcome to your Expo app 👋
+<h1 align="center">భగవద్గీత</h1>
+<p align="center"><em>A quiet, offline Bhagavad Gita reader in Telugu, built with Expo.</em></p>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  <img alt="Expo SDK 58" src="https://img.shields.io/badge/Expo-SDK%2058-000020?logo=expo&logoColor=white">
+  <img alt="React Native" src="https://img.shields.io/badge/React%20Native-0.88-20232a?logo=react&logoColor=61dafb">
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white">
+  <img alt="Licence: MIT (code)" src="https://img.shields.io/badge/code-MIT-green">
+  <img alt="Platforms" src="https://img.shields.io/badge/iOS%20%7C%20Android%20%7C%20Web-grey">
+</p>
 
-## Get started
+---
 
-1. Install dependencies
+All 700 slokas, word-by-word meanings, two Telugu translations and a full commentary,
+bundled into the app so it works with no network at all. Designed to be read a page at a
+time, the way a printed Gita is.
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- **Verse-at-a-time reading.** Each sloka is one page. Swipe horizontally through a chapter; the app
+  remembers where you stopped.
+- **Layers you can switch on.** Telugu sloka is always shown. Devanagari, IAST transliteration, a second
+  Telugu translation, and an English translation are each a toggle in Settings.
+- **ప్రతిపదార్థం and వ్యాఖ్యానం.** Word meanings sit under every verse. The long commentary is loaded on demand
+  so chapters stay light.
+- **Progress without pressure.** Read verses, bookmarks, a day streak, and a chapter progress ring. A
+  "verse of the day" walks the whole text once every ~650 days.
+- **Two visual styles.** Classical Indian miniature paintings, or photographs of Gita sites and Ravi Varma prints.
+  Nature scenes, lotuses, mandalas and chapter emblems are drawn in code with SVG.
+- **Typography first.** Noto Serif Telugu and Noto Sans Telugu, five text sizes, three weights, light and
+  dark themes, large tap targets.
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Getting started
 
 ```bash
-npm run reset-project
+git clone git@github.com:KousthubhaKrishna/gita.git
+cd gita
+npm install
+
+# Fetch and compile the verse data (not shipped in this repo, see below). ~2 minutes.
+npm run data
+
+npx expo start
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+The app runs in Expo Go on iOS and Android, and in the browser with `npx expo start --web`.
+Release builds go through EAS: `npx eas-cli build --profile preview --platform android`.
 
-### Other setup steps
+### Artwork
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+The painting and photo sets are also not committed. `assets/art/README.md` lists every file the app expects,
+with the exact source and licence of each, so you can download them from Wikimedia Commons and The Met.
+Everything else in the UI is vector and renders without them.
 
-## Learn more
+## Project layout
 
-To learn more about developing your project with Expo, look at the following resources:
+```
+src/
+  app/            Expo Router screens: home, chapter, reader, settings, about
+  components/     VersePage, ChapterComplete, art/ (SVG scenes, frames, lotus, ornaments), ui/
+  data/           chapters, art manifest, verse loader; verses/ and purport/ are generated
+  store/          zustand stores persisted to AsyncStorage: settings, reading progress
+  theme/          design tokens, chapter hues, light/dark theme provider
+  lib/            Telugu numeral and text helpers, shared types
+scripts/data/
+  fetch_sources.py   downloads the two raw sources into scripts/data/raw/
+  compile.py         normalises them into compact per-chapter JSON the app bundles
+assets/
+  fonts/          Noto Telugu families (OFL)
+  art/            paintings and photographs (download separately, see README there)
+  source/         make_icon.py, which generates the app icon as SVG
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Data & licences
 
-## Join the community
+The application code is MIT licensed (see `LICENSE`). The texts and media it displays are third-party works
+with their own terms, which is why the compiled data and artwork are generated locally rather than committed:
 
-Join our community of developers creating universal apps.
+| Content | Source | Terms |
+|---|---|---|
+| Telugu sloka, word meanings, translation, commentary | Swami Mukundananda, [holy-bhagavad-gita.org](https://www.holy-bhagavad-gita.org/), via [gita-api.vercel.app](https://gita-api.vercel.app) | Copyright the author. Personal, non-commercial reading only. |
+| Second Telugu translation | Swamini Saradapriyananda (Chinmaya Mission), via [te.wikisource.org](https://te.wikisource.org/wiki/భగవద్గీత_-_తెలుగు_అనువాదము) | CC BY-SA 4.0 |
+| Devanagari text, IAST, English translation | [nvkudva/Bhagavad-Geeta](https://github.com/nvkudva/Bhagavad-Geeta) compilation (Swami Sivananda's translation) | As stated by that repository |
+| Fonts | Noto Serif Telugu, Noto Sans Telugu (Google / Noto) | SIL Open Font License 1.1 (`assets/fonts/OFL.txt`) |
+| Paintings and photographs | Wikimedia Commons, The Metropolitan Museum of Art | Public domain, CC0, CC BY, CC BY-SA per image (`assets/art/README.md`) |
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The Sanskrit text of the Bhagavad Gita itself is in the public domain. The same credits are shown inside the
+app under "మూలాలు & కృతజ్ఞతలు".
+
+If you distribute a build of this app, you are responsible for complying with the terms above, in particular
+the non-commercial restriction on the commentary.
+
+## Development
+
+```bash
+npm run lint        # expo lint
+npm run typecheck   # tsc --noEmit
+npm run data        # refetch and recompile verse data
+```
+
+Contributions that improve the reading experience, accessibility, or Telugu typography are welcome.
+Please do not open PRs that commit the generated data or artwork.

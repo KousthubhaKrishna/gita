@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "gita",
+    "name": "భగవద్గీత",
     "slug": "gita",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,35 +8,53 @@
     "scheme": "gita",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kousthubha.gita",
+      "infoPlist": {
+        "CFBundleDisplayName": "భగవద్గీత"
+      }
     },
     "android": {
+      "package": "com.kousthubha.gita",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#17205A",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "output": "server",
+      "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
       "expo-router",
+      "expo-font",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
+          "backgroundColor": "#F8F3EA",
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "imageWidth": 180,
+          "dark": {
+            "backgroundColor": "#0F1020"
+          }
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "e05fc8aa-5d1c-44c6-95ce-10a74b0a4dd2"
+      }
     }
   }
 }

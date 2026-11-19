@@ -41,3 +41,11 @@ example
 # generated native folders
 /ios
 /android
+
+# Not redistributed: third-party verse data and artwork (see README "Data & licences").
+# Regenerate with: python3 scripts/data/fetch_sources.py && python3 scripts/data/compile.py
+scripts/data/raw/
+src/data/verses/
+src/data/purport/
+assets/art/*.webp
+assets/art/**/*.webp

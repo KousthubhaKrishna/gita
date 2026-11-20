@@ -16,6 +16,21 @@ All 700 slokas, word-by-word meanings, two Telugu translations and a full commen
 bundled into the app so it works with no network at all. Designed to be read a page at a
 time, the way a printed Gita is.
 
+<table align="center">
+  <tr>
+    <td align="center"><img src="docs/screenshots/01-home.png" width="200" alt="Home screen with progress ring and verse of the day"></td>
+    <td align="center"><img src="docs/screenshots/02-chapters.png" width="200" alt="Chapter list with miniature paintings and progress bars"></td>
+    <td align="center"><img src="docs/screenshots/03-chapter.png" width="200" alt="Chapter overview with painting, summary and continue button"></td>
+    <td align="center"><img src="docs/screenshots/04-reader.png" width="200" alt="Verse reader showing sloka 1.1 and word-by-word meanings"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Home: progress ring, streak, నేటి శ్లోకం</sub></td>
+    <td align="center"><sub>18 chapters, each with its painting</sub></td>
+    <td align="center"><sub>Chapter page, pick up where you left</sub></td>
+    <td align="center"><sub>Reader: sloka and ప్రతిపదార్థం</sub></td>
+  </tr>
+</table>
+
 ## Features
 
 - **Verse-at-a-time reading.** Each sloka is one page. Swipe horizontally through a chapter; the app

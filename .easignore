@@ -1,0 +1,29 @@
+# EAS Build upload list. Replaces .gitignore for EAS only.
+# Mirrors .gitignore but deliberately INCLUDES the locally generated verse data and
+# artwork (scripts/data/raw, src/data/verses, src/data/purport, assets/art) that are
+# kept out of git for licensing reasons. Run `npm run data` before building.
+.git/
+node_modules/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.metro-health-check*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.DS_Store
+*.pem
+.env*.local
+*.tsbuildinfo
+/ios
+/android
+scripts/data/raw/
+docs/

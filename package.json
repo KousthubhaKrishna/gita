@@ -48,7 +48,8 @@
     "typecheck": "tsc --noEmit",
     "data:fetch": "python3 scripts/data/fetch_sources.py",
     "data:compile": "python3 scripts/data/compile.py",
-    "data": "npm run data:fetch && npm run data:compile"
+    "data": "npm run data:fetch && npm run data:compile",
+    "release": "bash scripts/release.sh"
   },
   "private": true
 }

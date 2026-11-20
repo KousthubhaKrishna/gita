@@ -7,6 +7,7 @@
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white">
   <img alt="Licence: MIT (code)" src="https://img.shields.io/badge/code-MIT-green">
   <img alt="Platforms" src="https://img.shields.io/badge/iOS%20%7C%20Android%20%7C%20Web-grey">
+  <a href="https://github.com/KousthubhaKrishna/gita/releases/latest"><img alt="Latest APK" src="https://img.shields.io/github/v/release/KousthubhaKrishna/gita?label=APK&color=3DDC84&logo=android&logoColor=white"></a>
 </p>
 
 ---
@@ -29,6 +30,17 @@ time, the way a printed Gita is.
   Nature scenes, lotuses, mandalas and chapter emblems are drawn in code with SVG.
 - **Typography first.** Noto Serif Telugu and Noto Sans Telugu, five text sizes, three weights, light and
   dark themes, large tap targets.
+
+## Install on Android
+
+The easiest path is the prebuilt APK, no store account needed:
+
+1. On your phone, open the **[latest release](https://github.com/KousthubhaKrishna/gita/releases/latest)** and download `gita-vX.Y.Z.apk`.
+2. Tap the downloaded file. Android will ask once to allow installs from your browser or Files app.
+3. Open భగవద్గీత. Everything is on the device; it never needs a network.
+
+Each release carries a `SHA256SUMS.txt` you can verify against. Updates are manual: install the newer APK over the
+old one and your reading progress is kept. iPhone users can run the app through Expo Go for now (see Getting started).
 
 ## Getting started
 
@@ -96,7 +108,12 @@ the non-commercial restriction on the commentary.
 npm run lint        # expo lint
 npm run typecheck   # tsc --noEmit
 npm run data        # refetch and recompile verse data
+npm run release     # build an APK on EAS and publish it as a GitHub Release (see scripts/release.sh)
 ```
+
+Releases are tagged `v<version>` from `expo.version` in `app.json`. Bump that, commit, then run `npm run release`.
+`.easignore` controls what is uploaded to EAS: unlike `.gitignore`, it keeps the generated verse data and artwork in
+the build while still excluding the raw sources.
 
 Contributions that improve the reading experience, accessibility, or Telugu typography are welcome.
 Please do not open PRs that commit the generated data or artwork.

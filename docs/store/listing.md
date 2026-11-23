@@ -10,8 +10,8 @@ Character limits: app name 30, short description 80, full description 4000.
 **App name** (18/30)
 భగవద్గీత – తెలుగు
 
-**Short description** (74/80)
-700 శ్లోకాలు, ప్రతిపదార్థం, రెండు తెలుగు అనువాదాలు, వ్యాఖ్యానం. పూర్తిగా ఆఫ్‌లైన్.
+**Short description** (73/80)
+700 శ్లోకాలు, ప్రతిపదార్థం, రెండు తెలుగు అనువాదాలు, వ్యాఖ్యానం. ఆఫ్‌లైన్.
 
 **Full description**
 శ్రీమద్భగవద్గీతను ఒక్కో శ్లోకం చొప్పున, ప్రశాంతంగా చదువుకోవడానికి రూపొందించిన యాప్ ఇది. ఇంటర్నెట్ అవసరం లేదు, ఖాతా అవసరం లేదు, ప్రకటనలు లేవు.
@@ -49,8 +49,8 @@ Character limits: app name 30, short description 80, full description 4000.
 **App name** (24/30)
 Bhagavad Gita – Telugu
 
-**Short description** (78/80)
-All 700 verses with word meanings, two Telugu translations and commentary. Offline.
+**Short description** (79/80)
+All 700 verses, word meanings, two Telugu translations and commentary. Offline.
 
 **Full description**
 A quiet, offline Bhagavad Gita for Telugu readers. One verse per page, the way a printed Gita reads. No internet, no account, no ads.

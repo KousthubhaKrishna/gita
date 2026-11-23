@@ -18,5 +18,14 @@
       "autoIncrement": true,
       "node": "26.3.0"
     }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "/Users/kousthubhakrishna.ch/.config/gita/play-service-account.json",
+        "track": "internal",
+        "releaseStatus": "draft"
+      }
+    }
   }
 }

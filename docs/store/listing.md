@@ -38,9 +38,9 @@ Character limits: app name 30, short description 80, full description 4000.
 యాప్ ఏ సమాచారాన్నీ సేకరించదు, ఎక్కడికీ పంపదు. మీ పఠన పురోగతి మీ ఫోన్‌లోనే ఉంటుంది.
 
 మూలాలు
-శ్లోకాలు, ప్రతిపదార్థం, తాత్పర్యం, వ్యాఖ్యానం: స్వామి ముకుందానంద, holy-bhagavad-gita.org (కాపీరైట్ రచయితలది; వ్యక్తిగత పఠనం కోసం). రెండవ అనువాదం: te.wikisource.org (CC BY-SA 4.0). దేవనాగరి, IAST, ఆంగ్లం: nvkudva/Bhagavad-Geeta సంకలనం. అక్షరాలు: Noto (OFL). చిత్రాలు: వికీమీడియా కామన్స్, ది మెట్ – పబ్లిక్ డొమైన్/CC. పూర్తి వివరాలు యాప్‌లో "మూలాలు & కృతజ్ఞతలు" లో, మరియు https://github.com/KousthubhaKrishna/gita లో.
+శ్లోకాలు, ప్రతిపదార్థం, తాత్పర్యం, వ్యాఖ్యానం: స్వామి ముకుందానంద, holy-bhagavad-gita.org (కాపీరైట్ రచయితలది; వ్యక్తిగత పఠనం కోసం). రెండవ అనువాదం: te.wikisource.org (CC BY-SA 4.0). దేవనాగరి, IAST, ఆంగ్లం: nvkudva/Bhagavad-Geeta సంకలనం. అక్షరాలు: Noto (OFL). చిత్రాలు: వికీమీడియా కామన్స్, ది మెట్ – పబ్లిక్ డొమైన్/CC. పూర్తి వివరాలు యాప్‌లో "మూలాలు & కృతజ్ఞతలు" లో చూడవచ్చు.
 
-ఈ యాప్ ఓపెన్ సోర్స్, ఉచితం, ఎప్పటికీ ఉచితమే.
+ఈ యాప్ ఉచితం, ఎప్పటికీ ఉచితమే.
 
 ---
 
@@ -75,9 +75,9 @@ Privacy
 The app collects nothing and sends nothing. Your reading progress stays on your phone.
 
 Sources
-Verses, word meanings, translation and commentary: Swami Mukundananda, holy-bhagavad-gita.org (copyright the author; for personal reading). Second translation: te.wikisource.org (CC BY-SA 4.0). Devanagari, IAST and English: the nvkudva/Bhagavad-Geeta compilation. Fonts: Noto (OFL). Artwork: Wikimedia Commons and The Met, public domain / CC. Full credits in the app under "Sources & acknowledgements" and at https://github.com/KousthubhaKrishna/gita.
+Verses, word meanings, translation and commentary: Swami Mukundananda, holy-bhagavad-gita.org (copyright the author; for personal reading). Second translation: te.wikisource.org (CC BY-SA 4.0). Devanagari, IAST and English: the nvkudva/Bhagavad-Geeta compilation. Fonts: Noto (OFL). Artwork: Wikimedia Commons and The Met, public domain / CC. Full credits in the app under "Sources & acknowledgements".
 
-Open source, free, and always will be.
+Free, and always will be.
 
 ---
 
@@ -85,7 +85,7 @@ Open source, free, and always will be.
 
 - Category: Books & Reference
 - Tags: Religion & spirituality, Books, Hinduism
-- Contact email: kodesweep@gmail.com · Website: https://github.com/KousthubhaKrishna/gita
+- Contact email: kodesweep@gmail.com · Website: none (repo link intentionally not shown publicly)
 - Privacy policy URL: https://github.com/KousthubhaKrishna/gita/blob/master/docs/privacy-policy.md
 - Ads: No · In-app purchases: No · Target audience: 18+ · Content rating: Everyone (Reference)
 - Data safety: no data collected, no data shared

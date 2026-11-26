@@ -4,6 +4,7 @@ import { ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ArchImage } from '@/components/art/ArchImage';
 import { Frame } from '@/components/art/Frame';
+import { InstallButton } from '@/components/InstallButton';
 import { NatureScene } from '@/components/art/NatureScene';
 import { Ornament } from '@/components/art/Ornament';
 import { Painting } from '@/components/art/Painting';
@@ -46,7 +47,7 @@ export default function Home() {
         {/* ───────── Hero painting ───────── */}
         <Painting art="upadesh" scrim="bottom" style={{ height: heroH }}>
           <View style={[styles.heroTop, { paddingTop: insets.top + Spacing.sm }]}>
-            <View />
+            <InstallButton />
             <View style={styles.glass}>
               <IconButton name="settings" color="#FFF6E6" onPress={() => router.push('/settings')} label="అమరికలు" />
             </View>

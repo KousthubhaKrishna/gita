@@ -4,7 +4,7 @@ import { Pressable, StyleSheet } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import { useTheme } from '@/theme';
 
-export type IconName = 'back' | 'close' | 'settings' | 'bookmark' | 'bookmarkFilled' | 'check' | 'info' | 'chevron' | 'list' | 'textSize';
+export type IconName = 'back' | 'close' | 'settings' | 'bookmark' | 'bookmarkFilled' | 'check' | 'info' | 'chevron' | 'list' | 'textSize' | 'download' | 'share' | 'plusSquare';
 
 const PATHS: Record<IconName, string> = {
   back: 'M15 5 L8 12 L15 19',
@@ -17,6 +17,9 @@ const PATHS: Record<IconName, string> = {
   chevron: 'M9 5 L16 12 L9 19',
   list: 'M5 7 H19 M5 12 H19 M5 17 H13',
   textSize: 'M4 18 L9 6 L14 18 M6 14 H12 M15 18 L18 11 L21 18 M16.5 16 H19.5',
+  download: 'M12 4 V15 M7.5 10.5 L12 15 L16.5 10.5 M5 19 H19',
+  share: 'M12 3 V14 M8.5 6.5 L12 3 L15.5 6.5 M8 10 H6 A1 1 0 0 0 5 11 V19 A1 1 0 0 0 6 20 H18 A1 1 0 0 0 19 19 V11 A1 1 0 0 0 18 10 H16',
+  plusSquare: 'M5 4 H19 A1 1 0 0 1 20 5 V19 A1 1 0 0 1 19 20 H5 A1 1 0 0 1 4 19 V5 A1 1 0 0 1 5 4 Z M12 8 V16 M8 12 H16',
 };
 
 export function Icon({ name, size = 22, color, strokeWidth = 1.8 }: { name: IconName; size?: number; color: string; strokeWidth?: number }) {

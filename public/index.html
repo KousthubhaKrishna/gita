@@ -35,5 +35,12 @@
   <body>
     <noscript>ఈ యాప్ కోసం JavaScript అవసరం. / This app needs JavaScript.</noscript>
     <div id="root"></div>
+    <script>
+      // Keep the install prompt until the app has mounted (see src/hooks/use-install-prompt.web.ts).
+      window.addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        window.__gitaInstallEvent = e;
+      });
+    </script>
   </body>
 </html>

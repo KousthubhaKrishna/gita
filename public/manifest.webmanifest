@@ -1,0 +1,19 @@
+{
+  "name": "భగవద్గీత – తెలుగు",
+  "short_name": "భగవద్గీత",
+  "description": "700 శ్లోకాలు, ప్రతిపదార్థం, రెండు తెలుగు అనువాదాలు, వ్యాఖ్యానం. ఆఫ్‌లైన్.",
+  "lang": "te",
+  "dir": "ltr",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F8F3EA",
+  "theme_color": "#F8F3EA",
+  "categories": ["books", "education"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -46,16 +46,27 @@ time, the way a printed Gita is.
 - **Typography first.** Noto Serif Telugu and Noto Sans Telugu, five text sizes, three weights, light and
   dark themes, large tap targets.
 
-## Install on Android
+## Install
 
-The easiest path is the prebuilt APK, no store account needed:
+### iPhone, iPad, or any browser
+
+The app runs as an installable web app at **[gita-telugu.expo.app](https://gita-telugu.expo.app)**. No store, no
+account, and it works offline once it has loaded.
+
+- **iPhone / iPad:** open the link in Safari, tap the Share button, then **Add to Home Screen**.
+- **Android (Chrome):** open the link, tap the ⋮ menu, then **Install app** or **Add to Home screen**.
+- **Desktop:** click the install icon in the address bar.
+
+### Android APK
+
+The native build is a bit smoother on Android:
 
 1. On your phone, open the **[latest release](https://github.com/KousthubhaKrishna/gita/releases/latest)** and download `gita-vX.Y.Z.apk`.
 2. Tap the downloaded file. Android will ask once to allow installs from your browser or Files app.
 3. Open భగవద్గీత. Everything is on the device; it never needs a network.
 
 Each release carries a `SHA256SUMS.txt` you can verify against. Updates are manual: install the newer APK over the
-old one and your reading progress is kept. iPhone users can run the app through Expo Go for now (see Getting started).
+old one and your reading progress is kept.
 
 ## Getting started
 
@@ -72,6 +83,8 @@ npx expo start
 
 The app runs in Expo Go on iOS and Android, and in the browser with `npx expo start --web`.
 Release builds go through EAS: `npx eas-cli build --profile preview --platform android`.
+The web app is built with `npm run web:build` (static export plus a generated service worker for offline use)
+and published with `npm run web:deploy`.
 
 ### Artwork
 

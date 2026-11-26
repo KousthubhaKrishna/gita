@@ -24,7 +24,7 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "output": "static",
+      "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
@@ -49,7 +49,7 @@
     "extra": {
       "router": {
         "asyncRoutes": {
-          "web": true
+          "web": "development"
         }
       },
       "eas": {

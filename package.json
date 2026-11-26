@@ -49,7 +49,9 @@
     "data:fetch": "python3 scripts/data/fetch_sources.py",
     "data:compile": "python3 scripts/data/compile.py",
     "data": "npm run data:fetch && npm run data:compile",
-    "release": "bash scripts/release.sh"
+    "release": "bash scripts/release.sh",
+    "web:build": "node scripts/build-web.mjs",
+    "web:deploy": "npm run web:build && npx eas-cli@latest deploy --prod"
   },
   "private": true
 }
